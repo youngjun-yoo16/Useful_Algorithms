@@ -81,41 +81,41 @@ int main(void)
     // Checking for American Express (AMEX) - 15 digits, starts with 34 or 37.
     if (count == 15)
     {
-      for (int i = 0; i < count; i++)
-      {
-        temp = (number[i] % 10) + (number[i]/10 % 10);
-        v = v + temp;
-      }
-      if (originalnumber[14] == 3 && v % 10 == 0 && (originalnumber[13] == 4 || originalnumber[13] == 7))
-      {
-        printf("AMEX\n");
-      }
-      else
-      {
-        printf("INVALID\n");
-      }
+        for (int i = 0; i < count; i++)
+        {
+            temp = (number[i] % 10) + (number[i]/10 % 10);
+            v = v + temp;
+        }
+        if (originalnumber[14] == 3 && v % 10 == 0 && (originalnumber[13] == 4 || originalnumber[13] == 7))
+        {
+            printf("AMEX\n");
+        }
+        else
+        {
+            printf("INVALID\n");
+        }
     }
     
     // Checking for Visa and MasterCard - 16 digits, starts with 51, 52, 53, 54, or 55
     if (count == 16)
     {
-      for (int i = 0; i < count; i++)
-      {
-        temp = (number[i] % 10) + (number[i]/10 % 10);
-        v = v + temp;
-      }
-      if (originalnumber[15] == 4 && v % 10 == 0)
-      {
-        printf("VISA\n");
-      }
-      else if (originalnumber[15] == 5 && v % 10 == 0 && (originalnumber[14] == 1 || originalnumber[14] == 2 || originalnumber[14] == 3 || originalnumber[14] == 4 || originalnumber[14] == 5))
+        for (int i = 0; i < count; i++)
+        {
+            temp = (number[i] % 10) + (number[i]/10 % 10);
+            v = v + temp;
+        }
+        if (originalnumber[15] == 4 && v % 10 == 0)
+        {
+            printf("VISA\n");
+        }
+        else if (originalnumber[15] == 5 && v % 10 == 0 && (originalnumber[14] == 1 || originalnumber[14] == 2 || originalnumber[14] == 3 || originalnumber[14] == 4 || originalnumber[14] == 5))
         {
             printf("MASTERCARD\n");
         }
-      else
-      {
-        printf("INVALID\n");
-      }
+        else
+        {
+            printf("INVALID\n");
+        }
     }
   
     return 0;
