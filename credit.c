@@ -60,7 +60,7 @@ int main(void)
     {
         // Adding the digits multiplied by 2 from second last digits and remaining digits which are not multiplied by 2.
         // i.e. If suppose we get 14 after multiplying the 4th digit by 2, than first part will be 4 (number[i] % 10) 
-        // and the second part will be 1(number[i]/10 % 10) i.e. 4+1= 5 (sum of 14).
+        // and the second part will be 1(number[i]/10 % 10) i.e. 4 + 1 = 5 (sum of 14).
         for (int i = 0; i < count; i++)
         {
             temp = (number[i] % 10) + (number[i]/10 % 10);
