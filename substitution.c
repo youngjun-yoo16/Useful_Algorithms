@@ -1,3 +1,9 @@
+// Implement a program that implements a substitution cipher, per the below.
+
+// $ ./substitution JTREKYAVOGDXPSNCUIZLFBMWHQ
+// plaintext:  HELLO
+// ciphertext: VKXXN
+
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
