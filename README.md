@@ -1,2 +1,2 @@
-# Validating_Credit_Card_Number
+# Useful Algorithms
 Validating the credit card number with Luhn's Algorithm.
