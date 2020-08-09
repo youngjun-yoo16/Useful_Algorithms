@@ -1,3 +1,7 @@
+// Implementing a program that computes the approximate grade level needed to comprehend some text.
+// Used Coleman-Liau index which is designed to output what (U.S.) grade level is needed to understand the text. 
+// index = 0.0588 * L - 0.296 * S - 15.8
+
 #include<stdio.h>
 #include<cs50.h>
 #include<string.h>
