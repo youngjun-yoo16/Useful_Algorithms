@@ -1,2 +1,2 @@
 # Useful Algorithms
-Validating the credit card number with Luhn's Algorithm.
+This repository is for storing some useful existing algorithms I coded using C. Examples include Luhn's Algorithm, Coleman-Liau index of a text, Encryption, and Decryption.
